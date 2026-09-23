@@ -1,0 +1,46 @@
+Student Marks Management Using Array
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Marks Management</h2>
+
+<?php
+$marks = array(85, 72, 90, 68, 80);
+
+$total = array_sum($marks);
+$average = $total / count($marks);
+$highest = max($marks);
+$lowest = min($marks);
+
+echo "Student Marks:<br>";
+
+foreach ($marks as $mark)
+{
+    echo $mark . "<br>";
+}
+
+echo "<br>Total Marks: $total<br>";
+echo "Average Marks: " . number_format($average, 2) . "<br>";
+echo "Highest Mark: $highest<br>";
+echo "Lowest Mark: $lowest";
+?>
+
+</body>
+</html>
+Output
+Student Marks Management
+
+Student Marks:
+85
+72
+90
+68
+80
+
+Total Marks: 395
+Average Marks: 79.00
+Highest Mark: 90
+Lowest Mark: 68
+
+
